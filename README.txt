@@ -1,16 +1,14 @@
-
 TITLE: 
-Neat - 100% Fully Responsive Free HTML5 Bootstrap Template
+My Portfolio -> Totaly Responsive website using html, css and javascript
 
 AUTHOR:
-DESIGNED & DEVELOPED by FreeHTML5.co
+This Website is made by Loïc Tisseyre, using a free template from FreeHTML5.co
 
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
+DESCRIPTION:
+My Portfolio with all of my projects
 
-
-CREDITS:
+---------------------------
+All used in this Web site:
 
 Bootstrap
 http://getbootstrap.com/
@@ -51,3 +49,4 @@ http://dimsemenov.com/plugins/magnific-popup/
 Demo Images:
 http://unsplash.com
 
+---------------------------

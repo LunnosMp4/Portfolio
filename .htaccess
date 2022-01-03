@@ -1,0 +1,4 @@
+ErrorDocument 401 https://loic-tisseyre.com/401.html
+ErrorDocument 402 https://loic-tisseyre.com/402.html
+ErrorDocument 403 https://loic-tisseyre.com/403.html
+ErrorDocument 404 https://loic-tisseyre.com/404.html

@@ -61,11 +61,12 @@
 						</div>
 						<div class="col-xs-10 text-right menu-1">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html">Accueil</a></li>
 								<li class="has-dropdown">
 									<a href="projects.html">Projets</a>
 									<ul class="dropdown">
 										<li><a href="sicarius.html">Sicarius</a></li>
+										<li><a href="runner.html">Runner</a></li>
 									</ul>
 								</li>
 								<li><a href="about.html">Qui suis-je</a></li>
@@ -87,7 +88,7 @@
 				   			<div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
 				   				<div class="slider-text-inner text-center">
 				   					<h1>Contactez moi</h1>
-										<h2>Attention le formulaire de contact n'est pas encore fonctionnel, merci d'utiliser mon adresse mail indiqué sur la page.</h2>
+										<h2>Merci de me contacter via le formulaire ci dessous ou bien directement via mon adresse email renseigné sur la page.</h2>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -114,28 +115,25 @@
 					</ul>
 				</div>
 				<div class="col-md-7 col-md-push-1 animate-box">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Nom">
-							</div>
+                    <form target="_blank" action="https://formsubmit.co/lctisseyre@gmail.com" method="POST">
+                      	<div class="form-group">
+                        	<div class="form-row">
+                          		<div class="col">
+									<input type="hidden" name="_subject" value="Nouveau message !">
+									<input type="text" name="name" class="form-control" placeholder="Nom" required>
+                          		</div>
+                          	<div class="col">
+								<input type="email" name="email" class="form-control" placeholder="Adresse Email" required>
+								<input type="hidden" name="_next" value="https://loic-tisseyre.com/contact-success.html">
+								<input type="hidden" name="_autoresponse" value="Bonjour, ceci est un message automatique. Merci d'avoir envoyé un message avec mon formulaire. Je vous recontacterais d'ici peu. Cordialement, Loïc Tisseyre.">
+                          	</div>
 						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Votre Message"></textarea>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input type="submit" value="Envoyer" class="btn btn-primary btn-modify">
-							</div>
-						</div>
-					</div>
+                      	</div>
+                      	<div class="form-group">
+                        	<textarea placeholder="Votre Message" class="form-control" name="message" rows="5" required></textarea>
+                      	</div>
+                      <button type="submit" class="btn btn-primary btn-modify">Envoyer</button>
+                    </form>
 				</div>
 			</div>
 		</div>
@@ -146,7 +144,7 @@
 			<div class="row">
 				<div class="col-md-4 col-md-push-1">
 					<h4>A propos de ce site</h4>
-					<p>Ce site a été partielement codé par moi, en effet, j'ai utilisé un template HTML5, pour le coté esthétique (fichier css). Cependant beaucoup d'aspect du site ont changé afin de le rendre tel que je le souhaité.</p>
+					<p>J'ai utilisé un template html afin de ne pas perdre de temps sur le plus gros de la mise en page cependant j'ai codé moi meme chaque page de ce site.</br> Cela peut vous donner une idée de mes compétences en html.</p>
 				</div>
 
 

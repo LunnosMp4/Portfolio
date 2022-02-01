@@ -20,7 +20,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: gray;
-  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
 }
 
 #page {
@@ -32,6 +32,52 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+.card {
+  background: #ffffff88;
+  color: rgba(0, 0, 0, 0.74);
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+  margin: 1em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 45px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: #7c7b7d;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 12px;
+  background: #7c7c7c2b;
+  color: rgba(0, 0, 0, 0.74);
+  font-family: inherit;
+  font-size: 105%;
+  width: 100%
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
 
 .offcanvas #page {
   overflow: hidden;
@@ -91,6 +137,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .container-wrap {
   max-width: 1060px;
+  border-radius: 30px;
   margin: 0 auto;
   margin-bottom: 1em;
   background: #fff;
@@ -478,6 +525,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-light-grey {
   background: #fafafa;
+}
+
+.fh5co-light-black {
+  background: #f0f0f0;
 }
 
 #fh5co-about,

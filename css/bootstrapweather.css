@@ -935,7 +935,7 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
   margin-right:100px ;
-  background-color:#fbc8d415;
+  background-color:rgba(251, 200, 212, 0.082);
   border: solid 1px;
   transition: transform 0.7s;
   border-color: #26262615;

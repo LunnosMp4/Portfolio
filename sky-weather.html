@@ -16,14 +16,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrapweather.css">
 	<link rel="stylesheet" href="css/weatherstyle.css">
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/my_script.js" defer></script>
+	<script src="js/weather.js" defer></script>
 
 	</head>
 	<body>
-		
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation"></nav>
 	<div class="container-wrap">
@@ -45,12 +44,13 @@
 			</div>
 		</div>
 		<div class="col-md-4 col-md-push-2"><h1 class="city">Montpellier, FR</h1></div>
-		<div class="leve col-md-8 col-md-push-2"> Levé du Soleil: 8:00:00 GMT</div>
-		<div class="couche col-md-8 col-md-push-2"> Couché du Soleil: 20:00:00 GMT</div>
+		<div class="leve col-md-8 col-md-push-2"> Lever du Soleil: 8:00:00 GMT</div>
+		<div class="couche col-md-8 col-md-push-2"> Coucher du Soleil: 20:00:00 GMT</div>
 		<div id="fh5co-work" class="fh5co-light-grey">
 			<div class="row">
-					<div class="col-md-4 col-md-push-1">
-					<h1 class="temp">16°C</h1>
+					<div class="col-md-3 col-md-push-2">
+						<h4 class="temp">16°C</h4>
+						<hr class="solid">
 						<div class="flex">
 							<img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
 							<div class="description">Cloudy</div>
@@ -58,16 +58,18 @@
 						<div class="min">Minimale: 13°C</div>
 						<div class="max">Maximale: 17°C</div>
 						<div class="feels_like">Ressentie: 15°C</div>
+						<span style="opacity:0;">.</span> 
 					</div>
-				<div class="col-md-4 col-md-push-2">
+				<div class="col-md-5 col-md-push-2">
 					<h2>Informations Avancées</h2>
-					<div class="pressure">Pressure: 1015 hPa</div>
-					<div class="humidity">Humidity: 60%</div>
+					<hr class="solid">
+					<div class="pressure">Pression: 1015 hPa</div>
+					<div class="humidity">Humidité: 60%</div>
 					<div class="visibility">Visibilité: 10000 m</div>
-					<div class="wind">Wind speed: 6.2 km/h</div>
-					<div class="rafale">Gust: 9 km/h</div>
+					<div class="wind">Vent: 6.20 km/h</div>
+					<div class="rafale">Rafale: 9.55 km/h</div>
 					<div class="nuage">Couverture Nuageuse: 0 %</div>
-					<div class="direction">Wind Direction: NE</div>
+					<div class="direction">Direction: Nord Ouest</div>
 				</div>
 			</div>
 		</div>
@@ -92,3 +94,4 @@
 	</div>
 	</body>
 </html>
+

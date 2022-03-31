@@ -1,5 +1,5 @@
 /*
-  WARNING : This css file is not made by me :
+  WARNING : This css file is not entire made by me :
 */
 
 @font-face {
@@ -9,11 +9,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url(../fonts/my_fonts/Minecraft.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 /* =======================================================
 *
 * 	Template Style 
 *
 * ======================================================= */
+
 body {
   font-family: "Oxygen", sans-serif;
   font-weight: 300;

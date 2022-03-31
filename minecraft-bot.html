@@ -1,7 +1,5 @@
-
 <!DOCTYPE HTML>
 <html>
-	<!-- Code developped by Loïc Tisseyre with html5 template-->
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,20 +23,37 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
-
+	
+	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/countview.js"></script>
+
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
 	</head>
 	<body>
 		
 	<div class="fh5co-loader"></div>
+	
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container-wrap">
@@ -49,8 +64,8 @@
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<li class="active"><a href="index.html">Accueil</a></li>
-							<li class="has-dropdown">
+							<li><a href="index.html">Accueil</a></li>
+							<li class="has-dropdown active">
 								<a href="projects.html">Projets</a>
 								<ul class="dropdown">
 									<li><a href="sicarius.html">Sicarius</a></li>
@@ -66,102 +81,88 @@
 			</div>
 		</div>
 	</nav>
+
 	<div class="container-wrap">
 		<aside id="fh5co-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/bg1.png);">
+			   	<li style="background-image: url(images/minecraft-bg.jpg);">
 			   		<div class="overlay-gradient"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 slider-text">
-				   				<div class="slider-text-inner">
-				   					<h1>Découvrir tout mes projets</h1>
-										<h2>Voir tout mes projets et les projets où j'ai apporté une aide précieuse.</h2>
-										<p><a class="btn btn-primary btn-learn" href="projects.html"></i>En apprendre plus</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
+		   			<div class="row">
+			   			<div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
+			   				<div class="slider-text-inner text-center">
+								<h1> <font face='Minecraft'>Bot Minecraft</h1>
+								<h2> <font face='Minecraft'>Une Intelligence Artificielle sur le jeu video Minecraft.</h2>
+							
+			   				</div>
+			   			</div>
 			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/bg2.png);">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
-				   				<div class="slider-text-inner">
-				   					<h1>Qui suis-je</h1>
-										<h2>Découvrez ici tout mon parcour, mes compétences, ...</h2>
-										<p><a class="btn btn-primary btn-learn" href="about.html"></i>En apprendre plus</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/bg3.png);">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container-fluids">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<h1>Me contacter</h1>
-										<h2>Vous pouvez me contacter sur cette page</h2>
-										<p><a class="btn btn-primary btn-learn" href="contact.html"></i>En apprendre plus</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>  	
+			   	</li>		   	
 			  	</ul>
 		  	</div>
-		</aside>
-
-		<div id="fh5co-work" class="fh5co-light-grey">
-			<div class="row animate-box">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Mes projets</h2>
-					<p>Découvrez ci-dessous mes plus gros projets ainsi que d'autres grands projets auquels j'ai pu participé</p>
-				</div>
-			</div>
+		</aside>		
+		<div id="fh5co-work">
 			<div class="row">
-				<div class="col-md-4 text-center animate-box">
-					<a href="sicarius.html" class="work"  style="background-image: url(images/sicarius2.png);">
-						<div class="desc">
-							<h3>Sicarius</h3>
-							<span>Première Game Jam</span>
-						</div>
+				<div class="col-md-8">
+					<video controls autoplay style="width: 100%; min-width: 100px;">
+						<source src="videos/runner.mp4"
+								type="video/mp4">
+						Desole votre navigateur ne prend pas en charge les videos.
+					</video>
 					</a>
 				</div>
-				<div class="col-md-4 text-center animate-box">
-					<a href="runner.html" class="work" style="background-image: url(images/runner1.png);">
-						<div class="desc">
-							<h3>Runner</h3>
-							<span>Projet CSFML</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<a href="sky-weather.html" class="work" style="background-image: url(images/sky2.png);">
-						<div class="desc">
-							<h3>Sky Weather</h3>
-							<span>Site Météo</span>
-						</div>
-					</a>
+				<div class="col-md-4 fh5co-project-detail">
+					<h2 class="fh5co-project-title"><font face='Minecraft'>Bot Minecraft</h2>
+					<span class="fh5co-project-sub">Projet Personnel</span>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, expedita. Quod a maiores nulla iure fugit fuga saepe similique asperiores iusto. Harum autem officia eius necessitatibus vel distinctio quos voluptate.</p>
+					<div class="fh5co-project-service">
+						<h3><font face='Minecraft'>Cote Technique</h3>
+						<ul>
+							<li>Javascript</li>
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In similique tenetur quasi excepturi voluptate, laborum voluptatum officia omnis quidem laboriosam earum hic natus dignissimos blanditiis, quam qui doloremque ducimus? Illo?</p>
+						</ul>
+						<br/>
+						<a class="github-button" href="https://github.com/LunnosMp4/Minecraft-Bot/subscription" data-icon="octicon-eye" data-size="large" aria-label="Watch LunnosMp4/Minecraft-Bot on GitHub">Watch</a>
+						<a class="github-button" href="https://github.com/LunnosMp4/Minecraft-Bot/archive/HEAD.zip" data-icon="octicon-download" data-size="large" aria-label="Download LunnosMp4/Minecraft-Bot on GitHub">Download</a>
+						<a class="github-button" href="https://github.com/LunnosMp4/Minecraft-Bot" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star LunnosMp4/Minecraft-Bot on GitHub">Star</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+		<div id="fh5co-work">
+			<div class="row">
+				<div class="col-md-8 col-md-push-4">
+					<img src="images/minecraft-bg.jpg" style="width: 100%; min-width: 100px;" alt="Minecraft"/>
+				</div>
+				<div class="col-md-4 fh5co-project-detail col-md-pull-8">
+					<h2 class="fh5co-project-title"><font face='Minecraft'>Plus qu'un simple robot</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, expedita. Quod a maiores nulla iure fugit fuga saepe similique asperiores iusto. Harum autem officia eius necessitatibus vel distinctio quos voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam omnis odit illo rem sint. Officia adipisci quasi dignissimos, repellat dolores beatae aperiam natus sit exercitationem eum rerum soluta sed? Eos. r sit amet consectetur adipisicing elit. Ipsa, expedita. Quod a maiores nulla iure fugit.</p>	
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-work">
+			<div class="row">	
+				<div class="col-md-8 col-md-push-4">
+					<img src="images/minecraft-bg.jpg" style="width: 100%; min-width: 100px;" alt="Minecraft"/>
+				</div>
+				<div class="col-md-4 col-md-pull-8">
+					<img src="images/test.jpeg" style="width: 100%; min-width: 100px;" alt="Minecraft"/>
+				</div>
+			</div>
+		</div>
+	</div><!-- END container-wrap -->
+
 	<div class="container-wrap">
 		<footer id="fh5co-footer" role="contentinfo">
 			<div class="row">
 				<div class="col-md-4 col-md-push-1">
-					<h4>A propos de ce site</h4>
-					<p>Ce Portfolio a été entierement fait en html/css, il s'agit de mon premier gros projet dans ce language de programmation.</p>
+					<h4><font face='Minecraft'>A propos de ce site</h4>
+					<p>Ce Portfolio a ete entierement fait en html/css, il s'agit de mon premier gros projet dans ce language de programmation.</p>
 				</div>
 
 
 				<div class="col-md-3 col-md-push-4">
-					<h4>Information de contact</h4>
+					<h4><font face='Minecraft'>Information de contact</h4>
 					<ul class="fh5co-footer-links">
 						<li><a href="https://www.google.fr/maps/place/58+Rue+des+Gabares,+34000+Montpellier,+France/
 							@43.6060587,3.8934091,17z/data=!3m1!4b1!4m5!3m4!1s0x12b6af9cb3018069:0x49ad8a6eb05cb6e3!
@@ -178,7 +179,6 @@
 					<p>
 						<small class="block">&copy; 2022. All Rights Reserved.</small> 
 						<small class="block">Designed by Loïc Tisseyre</small>
-						<span style="opacity:0;" id="count"></span>
 					</p>
 				</div>
 			</div>
@@ -210,4 +210,3 @@
 
 	</body>
 </html>
-

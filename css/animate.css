@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-/*!
-WARNING : This css file is not made by me :
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
-
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

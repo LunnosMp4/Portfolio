@@ -364,6 +364,12 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  overflow: hidden;
+  transition: transform .5s ease;
+}
+
+.img-responsive:hover {
+  transform: scale(1.05);
 }
 
 .img-rounded {

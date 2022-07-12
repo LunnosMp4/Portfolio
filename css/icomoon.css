@@ -576,6 +576,12 @@
 .icon-document:before {
   content: "\e005";
 }
+.icon-document {
+  transition: transform .5s ease;
+}
+.icon-document:hover {
+  transform: scale(1.5);
+}
 .icon-documents:before {
   content: "\e006";
 }
@@ -2155,7 +2161,13 @@
   content: "\eadf";
 }
 .icon-github:before {
-  content: "\eae0";
+  content: "\eae0";  
+}
+.icon-github {
+  transition: transform .5s ease;
+}
+.icon-github:hover {
+  transform: scale(1.5);
 }
 .icon-npm:before {
   content: "\eae1";
@@ -2231,6 +2243,12 @@
 }
 .icon-linkedin2:before {
   content: "\eaf9";
+}
+.icon-linkedin2 {
+  transition: transform .5s ease;
+}
+.icon-linkedin2:hover {
+  transform: scale(1.5);
 }
 .icon-linkedin22:before {
   content: "\eafa";

@@ -1511,3 +1511,33 @@ input[type="text"] {
 ::-webkit-scrollbar-thumb:hover {
   background: #7771bc90;
 }
+
+/* Cookies Color */
+.bepVfn svg path {
+  fill: #a19aed !important;
+}
+
+.bepVfn svg path:last-child {
+  fill: #fff !important;
+}
+
+.react-switch-bg {
+  background: #a19aed !important;
+}
+
+.ButtonGroup__BtnStyle-sc-1usw1pe-0 {
+  color: #a19aed !important;
+}
+
+.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa {
+  color: #a19aed !important;
+  fill: #a19aed !important;
+}
+
+.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa.gTyPIa:hover {
+  color: #7974b7 !important;
+}
+
+.dThDlS {
+  background: #a19aed52 !important;
+}

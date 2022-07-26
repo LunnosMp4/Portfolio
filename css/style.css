@@ -601,15 +601,18 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .work .desc {
     opacity: 1;
-    background: transparent !important;
+    background: #00000050 !important;
   }
   .work .desc h3 {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    color: #fff;
+    font-size: 25px;
   }
   .work .desc span {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    color: #fff;
   }
 }
 .work:hover .desc {
@@ -1324,6 +1327,25 @@ input[type="text"] {
   background: #00000031 !important;
   border-color: #00000031 !important;
   color: #fff !important;
+}
+
+.btn-more {
+  background: #a19aed;
+  color: #fff;
+  border: 2px solid #a19aed;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-more:hover, .btn-more:focus, .btn-more:active {
+  background: #a19aed96 !important;
+  border-color: #a19aed96 !important;
+  color: #fff
 }
 
 .btn-outline {

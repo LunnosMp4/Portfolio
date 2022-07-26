@@ -240,6 +240,24 @@
 
 	};
 
+	// Magnetic Hover Effet
+	const magneticBtns = document.querySelectorAll('.btn, .icon')
+	const magneticEffect = function (e) {
+	const { offsetX: x, offsetY: y } = e
+	const { offsetWidth: width, offsetHeight: height } = this
+	const moveArea = 30
+	const xMove = (x / width) * (moveArea * 2) - moveArea
+	const yMove = (y / height) * (moveArea * 2) - moveArea
+	this.style.transform = `translate(${xMove}px, ${yMove}px)`
+	if (e.type === 'mouseleave')
+		this.style.transform = ''
+	}
+	magneticBtns.forEach((magneticBtn) =>
+		magneticBtn.addEventListener('mousemove', magneticEffect)
+	)
+	magneticBtns.forEach((magneticBtn) =>
+		magneticBtn.addEventListener('mouseleave', magneticEffect)
+	)
 
 
 	$(function(){
@@ -256,3 +274,4 @@
 
 
 }());
+

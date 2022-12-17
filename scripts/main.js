@@ -24,27 +24,21 @@
 	};
 
 	var mobileMenuOutsideClick = function() {
-
 		$(document).click(function (e) {
-	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+			var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
 
-	    	if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
-				
-	    	}
-	    
-	    	
-	    }
+				if ( $('body').hasClass('offcanvas') ) {
+					$('body').removeClass('offcanvas');
+					$('.js-fh5co-nav-toggle').removeClass('active');
+					
+				}
+			}
 		});
-
 	};
 
 
 	var offcanvasMenu = function() {
-
 		$('#page').prepend('<div id="fh5co-offcanvas" />');
 		$('#page').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>');
 		var clone1 = $('.menu-1 > ul').clone();
@@ -76,9 +70,7 @@
 
 
 		$(window).resize(function(){
-
 			if ( $('body').hasClass('offcanvas') ) {
-
     			$('body').removeClass('offcanvas');
     			$('.js-fh5co-nav-toggle').removeClass('active');
 				
@@ -86,9 +78,7 @@
 		});
 	};
 
-
 	var burgerMenu = function() {
-
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 			var $this = $(this);
 
@@ -100,7 +90,6 @@
 			}
 			$this.toggleClass('active');
 			event.preventDefault();
-
 		});
 	};
 	
@@ -143,19 +132,14 @@
 
 
 	var dropdown = function() {
-
 		$('.has-dropdown').mouseenter(function(){
-
-			var $this = $(this);
-			$this
+			$(this)
 				.find('.dropdown')
 				.css('display', 'block')
 				.addClass('animated-fast fadeInUpMenu');
 
 		}).mouseleave(function(){
-			var $this = $(this);
-
-			$this
+			$(this)
 				.find('.dropdown')
 				.css('display', 'none')
 				.removeClass('animated-fast fadeInUpMenu');
@@ -165,29 +149,14 @@
 
 
 	var goToTop = function() {
-
-		$('.js-gotop').on('click', function(event){
-			
-			event.preventDefault();
-
-			$('html, body').animate({
-				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
-			
-			return false;
-		});
-
 		$(window).scroll(function(){
-
 			var $win = $(window);
 			if ($win.scrollTop() > 200) {
 				$('.js-top').addClass('active');
 			} else {
 				$('.js-top').removeClass('active');
 			}
-
 		});
-	
 	};
 
 
@@ -239,25 +208,6 @@
 	  	});
 
 	};
-
-	// Magnetic Hover Effet
-	const $$ = (s, o = document) => o.querySelectorAll(s);
-
-	$$('.btn, .icon, .js-gotop').forEach(el => el.addEventListener('mousemove', function(e) {
-	const pos = this.getBoundingClientRect();
-	const mx = e.clientX - pos.left - pos.width/2; 
-	const my = e.clientY - pos.top - pos.height/2;
-	
-	this.style.transform = 'translate('+ mx * 0.15 +'px, '+ my * 0.3 +'px)';
-	this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
-	this.children[0].style.transform = 'translate('+ mx * 0.025 +'px, '+ my * 0.075 +'px)';
-	}));
-
-	$$('.btn, .icon, .js-gotop').forEach(el => el.addEventListener('mouseleave', function() {
-	this.style.transform = 'translate3d(0px, 0px, 0px)';
-	this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
-	this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
-	}));
 
 	// Cursor circle effect
 	$(document).on('mousemove', function(e) {
@@ -318,6 +268,12 @@
 	  }
 	});
 
+	if (localStorage.getItem('darkMode') === 'true') {
+		$('head').append('<link rel="stylesheet" href="/css/style-dark.css">');
+	} else {
+		$('head').append('<link rel="stylesheet" href="/css/style-white.css">');
+	}
+
 	$(function(){
 		mobileMenuOutsideClick();
 		offcanvasMenu();
@@ -332,7 +288,5 @@
 		cursorActive('button');
 		cursorActive('a');
 	});
-
-
 }());
 

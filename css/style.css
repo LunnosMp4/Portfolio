@@ -542,6 +542,10 @@ div#fh5co-about {
   }
 }
 
+.color-black {
+  color: #000 !important;
+}
+
 .about-desc {
   margin-top: -40px;
 }

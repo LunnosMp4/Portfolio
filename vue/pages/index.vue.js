@@ -33,10 +33,10 @@ export default {
 					link: '/projets/moulibot.html'
 				},
 				{
-					name: 'Pas de Projet',
-					description: 'Arrive bientôt',
-					thumbnail: 'images/portfolio-6.jpg',
-					link: '404.html'
+					name: 'Dump 1090',
+					description: 'Interface Web pour Dump 1090',
+					thumbnail: '/images/dump1090.png',
+					link: '/projets/dump1090.html'
 				}
 			]
         }
@@ -101,7 +101,6 @@ export default {
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <div class="about-desc">
                         <h3>Loïc Tisseyre</h3>
-                        <p>Etudiant en informatique.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -110,11 +109,11 @@ export default {
                     </div>
                     <div class="col-md-6 fh5co-project-detail">
                         <h2 class="fh5co-project-title">Présentation</h2>
-                        <p>Actuellement étudiant dans l'école Epitech Montpellier.</br>J'ai obtenu un BAC S, avec spécialité Science de l'ingénieur, et Mathématique. </br>J'ai découvert la programmation durant le lycée grace a des tutoriels sur Internet , mais également durant mes cours de Science de l'ingénieur.</br>J'ai alors décidé d'intégrer l'école Epitech afin d'en faire mon métier.</p>
+                        <p>Je suis actuellement étudiant à l'Ecole Epitech Montpellier, dans le but de devenir un développeur professionnel. J'ai obtenu mon baccalauréat scientifique, avec une spécialité en science de l'ingénieur et en mathématiques. Mon intérêt pour la programmation a commencé au lycée, grâce à des tutoriels en ligne et à mes cours de science de l'ingénieur.</p>
                         <h2 class="fh5co-project-title">Centre d'interet</h2>
-                        <p>Passionné d'aviation, j'ai eu l'occasion de passer mon Brevet d'initiation aéronautique puis, mon Brevet de pilote ULM. </br>J'ai également fait beaucoup de sport, tel que le tennis, le taekwondo et plus récemment de l'escalade où j'ai pris beaucoup de plaisir. Désormais je fais de la musculation mais également  du sport en extérieur course à pied, vélo, randonnée.</p>
+                        <p>En dehors de la programmation, je suis passionné par l'aviation. J'ai obtenu mon Brevet d'Initiation Aéronautique et mon Brevet de pilote ULM. J'ai également pratiqué plusieurs sports tels que le tennis, le taekwondo et, plus récemment, l'escalade.</p>
                         <h2 class="fh5co-project-title">Compétences</h2>
-                        <p>Depuis que je fais de la programmation j'ai pu expérimenté plusieurs languages, notemment le C, le Python, le Java, le HTML/CSS, le C# et enfin le JS.</br>Etant en plein apprentissage pour l'instant les languages que je métrise le plus sont le C, le Python et le HTML/CSS.</br>J'ai un niveau B2 en anglais et un niveau A2 en espagnol.</p>
+                        <p>J'ai une bonne connaissance des langages web tels que HTML/CSS, JavaScript et Python. En outre, je suis également compétent dans les langages C, C++ et C#. Je suis très flexible et adaptable, ce qui me permet de m'adapter facilement à de nouveaux langages ou technologies. Vous pouvez consulter mon GitHub pour voir mes projets et mes contributions.<br>Je parle couramment l'anglais, avec un niveau B2 et j'ai des connaissances en espagnol, avec un niveau A2.</p>
                     </div>
                     <div id="fh5co-work" class="fh5co-light-grey">
                         <div class="row">
@@ -136,7 +135,7 @@ export default {
                                     </span>
                                     <div class="desc">
                                         <h3><a href="#" target="_blank">Mon CV</a></h3>
-                                        <p>Voici mon <b><a href="ressources/CV Tisseyre Loïc.pdf" target="_blank">CV</a></b> pour en apprendre plus sur moi, mon parcours, mes compétences.</p>
+                                        <p>Celui ci n'est pas à jour</p>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +166,7 @@ export default {
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 text-center" v-for="project in projects.slice(0, 3)">
+                <div class="col-md-4 text-center" v-for="project in projects.slice(3, 6)">
                     <a :href="project.link" class="work" :style="{backgroundImage: 'url(' + project.thumbnail + ')'}">
                         <div class="desc">
                             <h3>{{ project.name }}</h3>

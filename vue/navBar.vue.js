@@ -23,6 +23,10 @@ export default {
                     name: "Moulibot",
                     link: '/projets/moulibot.html'
                 },
+                {
+                    name: "Dump 1090",
+                    link: '/projets/dump1090.html'
+                }
             ]
         }
     },

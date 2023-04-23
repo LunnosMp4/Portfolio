@@ -11,6 +11,7 @@ import runner from './pages/projects/runner.vue.js'
 import sicarius from './pages/projects/sicarius.vue.js'
 import moulibot from './pages/projects/moulibot.vue.js'
 import minecraftbot from './pages/projects/minecraftBot.vue.js'
+import dump from './pages/projects/dump1090.vue.js'
 
 const page = Vue.createApp({})
 page.component('navigation', navigation)
@@ -23,6 +24,7 @@ page.component('runner', runner)
 page.component('sicarius', sicarius)
 page.component('moulibot', moulibot)
 page.component('minecraftbot', minecraftbot)
+page.component('dump1090', dump)
 page.component('error', error)
 page.component('error', projects)
 page.mount('#page')

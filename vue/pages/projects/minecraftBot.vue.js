@@ -25,7 +25,11 @@ export default {
 		<div id="fh5co-work">
 			<div class="row">
 				<div class="col-md-8">
-					<img src="/images/minecraft-bg.jpg" alt="Minecraft" class="img-responsive">
+					<video controls autoplay style="width: 100%; min-width: 100px;">
+						<source src="/videos/minecraft_1.mp4"
+								type="video/mp4">
+						Désolé votre navigateur ne prend pas en charge les vidéos.
+					</video>
 					</a>
 				</div>
 				<div class="col-md-4 fh5co-project-detail">
@@ -48,7 +52,11 @@ export default {
 		<div id="fh5co-work">
 			<div class="row">
 				<div class="col-md-8 col-md-push-4">
-					<img src="/images/minecraft-bg.jpg" style="width: 90%; min-width: 100px;" alt="Minecraft"/>
+					<video controls style="width: 100%; min-width: 100px;">
+						<source src="/videos/minecraft_2.mp4"
+								type="video/mp4">
+						Désolé votre navigateur ne prend pas en charge les vidéos.
+					</video>
 				</div>
 				<div class="col-md-4 fh5co-project-detail col-md-pull-8">
 					<h2 class="fh5co-project-title"><font face='Minecraft'>Toute les actions possibles..</h2>
@@ -58,7 +66,12 @@ export default {
 		</div>
 		<div id="fh5co-work">
 			<div class="row">	
-				<div class="col-md-8 col-md-push-5">
+				<div class="col-md-8 col-md-push-4">
+					<video controls style="width: 100%; min-width: 100px;">
+						<source src="/videos/prismarine.mp4"
+								type="video/mp4">
+						Désolé votre navigateur ne prend pas en charge les vidéos.
+					</video>
 					<img src="/images/minecraft-bg.jpg" alt="Minecraft" class="img-responsive" width="80%">
 				</div>
 				<div class="col-md-4 fh5co-project-detail col-md-pull-8">

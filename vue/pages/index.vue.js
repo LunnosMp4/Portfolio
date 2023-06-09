@@ -134,8 +134,8 @@ export default {
                                         <a href="ressources/CV Tisseyre Loïc.pdf" target="_blank"><i class="icon-document"></i></a>
                                     </span>
                                     <div class="desc">
-                                        <h3><a href="#" target="_blank">Mon CV</a></h3>
-                                        <p>Celui ci n'est pas à jour</p>
+                                        <h3><a href="ressources/CV Tisseyre Loïc.pdf" target="_blank">Mon CV</a></h3>
+                                        <p>Pour en apprendre plus sur moi, mon parcours, mes compétences.</p>
                                     </div>
                                 </div>
                             </div>
